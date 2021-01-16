@@ -1,10 +1,9 @@
 import React from "react";
-
+import GlassBackground from "./UI/glassBackground";
 const aboutContent = (props) => (
   <React.Fragment>
     <main className="relative w-full h-full flex place-items-center justify-center">
-      <div className="w-5/6 h-5/6 transform-gpu -translate-y-12 bg-gradient-to-tr from-blue-900 to-blue-300 rounded-2xl"></div>
-      <div className="glass absolute w-5/6 h-5/6 transform-gpu -translate-y-6 translate-x-6 bg-yellow-300 rounded-2xl">
+      <GlassBackground>
         <h1 className="font-secondary text-white text-2xl m-9">
           Hello, my name is Jose, and I'm an entry-level web designer/developer.
           As an Ohlone College Alumni, I hold an Associate's Degree in
@@ -29,7 +28,7 @@ const aboutContent = (props) => (
           <li>FIGMA: 1 year</li>
           <li>ADOBE XD: 1 year</li>
         </ul>
-      </div>
+      </GlassBackground>
     </main>
   </React.Fragment>
 );

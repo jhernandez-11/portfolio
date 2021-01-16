@@ -1,29 +1,5 @@
 import React from "react";
-
-const rightArrow = (props) => {
-  const svgClasses = ["ionicon", "w-12", "text-gray-300"];
-  if (props.active2) {
-    svgClasses.pop();
-    svgClasses.push("hover:text-blue-600", "animate-pulse", "cursor-pointer");
-  }
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={svgClasses.join(" ")}
-      viewBox="0 0 512 512"
-    >
-      <title>Next Page</title>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="48"
-        d="M184 112l144 144-144 144"
-      />
-    </svg>
-  );
-};
+import Link from "next/link";
 
 const leftArrow = (props) => {
   const svgClasses = ["ionicon", "w-12", "text-gray-300"];
@@ -32,21 +8,55 @@ const leftArrow = (props) => {
     svgClasses.push("hover:text-blue-600", "animate-pulse", "cursor-pointer");
   }
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={svgClasses.join(" ")}
-      viewBox="0 0 512 512"
-    >
-      <title>Previous Page</title>
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="48"
-        d="M328 112L184 256l144 144"
-      />
-    </svg>
+    <React.Fragment>
+      <Link href={props.leftPage}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={svgClasses.join(" ")}
+          viewBox="0 0 512 512"
+        >
+          <title>{props.active1 ? "Previous Page" : null}</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="48"
+            d="M328 112L184 256l144 144"
+          />
+        </svg>
+      </Link>
+    </React.Fragment>
+  );
+};
+
+const rightArrow = (props) => {
+  const svgClasses = ["ionicon", "w-12", "text-gray-300"];
+  if (props.active2) {
+    svgClasses.pop();
+    svgClasses.push("hover:text-blue-600", "animate-pulse", "cursor-pointer");
+  }
+
+  return (
+    <React.Fragment>
+      <Link href={props.rightPage}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={svgClasses.join(" ")}
+          viewBox="0 0 512 512"
+        >
+          <title>{props.active2 ? "Next Page" : null}</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="48"
+            d="M184 112l144 144-144 144"
+          />
+        </svg>
+      </Link>
+    </React.Fragment>
   );
 };
 

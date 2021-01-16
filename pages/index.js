@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../layout/Nav";
+import Header from "../layout/Header";
 import Main from "../layout/Main";
 import Footer from "../layout/Footer";
 
@@ -8,7 +8,7 @@ class Home extends Component {
     arrows: {
       left: false,
       right: true,
-    },
+    }
   };
   render() {
     return (
@@ -19,6 +19,8 @@ class Home extends Component {
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
+            rightPage="/designs"
+            leftPage="/"
           />
         </div>
       </React.Fragment>

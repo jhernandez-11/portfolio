@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../layout/Nav";
+import Header from "../layout/Header";
 import AboutContent from "../components/AboutContent";
 import Footer from "../layout/Footer";
 
@@ -20,6 +20,8 @@ class About extends Component {
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
+            rightPage="/connect"
+            leftPage="/developments"
           />
         </div>
       </React.Fragment>

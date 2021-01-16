@@ -28,23 +28,21 @@ const header = (props) => {
 
   return (
     <React.Fragment>
-      <header className="flex justify-around w-screen py-6">
+      <nav className="flex justify-around w-screen py-6">
         <Link href="/">
-          <div className="flex row items-center text-lg cursor-pointer transform hover:scale-105 transition ease-linear">
-            <h1 className="text-2xl mr-6 font-bold text-blue-600">
-              josehdz.io
-            </h1>
-          </div>
+          <h1 className="text-2xl font-bold text-blue-600 cursor-pointer transform-gpu hover:scale-105 transition ease-linear">
+            josehdz.io
+          </h1>
         </Link>
 
         <ul className="flex justify-evenly text-lg">
           <li className={liClasses.join(" ")}>
-            <Link href="/designer">
+            <Link href="/designs">
               <a className={designsTab.join(" ")}>Designs</a>
             </Link>
           </li>
           <li className={liClasses.join(" ")}>
-            <Link href="/developer">
+            <Link href="/developments">
               <a className={developmentsTab.join(" ")}>Developments</a>
             </Link>
           </li>
@@ -59,7 +57,7 @@ const header = (props) => {
             </Link>
           </li>
         </ul>
-      </header>
+      </nav>
     </React.Fragment>
   );
 };

@@ -1,27 +1,20 @@
 import React, { Component } from "react";
-import ConnectContent from "../components/ConnectContent";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 
-class Connect extends Component {
-  state = {
-    arrows: {
-      left: true,
-      right: false,
-    }
-  };
-
+class Body extends Component {
+  state = {};
   render() {
     return (
       <React.Fragment>
         <div className="container">
-          <Header tab="connect" />
-          <ConnectContent />
+          <Header />
+          {this.props.children}
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
-            rightPage="/connect"
-            leftPage="/about"
+            rightPage="/designs"
+            leftPage="/"
           />
         </div>
       </React.Fragment>
@@ -29,4 +22,4 @@ class Connect extends Component {
   }
 }
 
-export default Connect;
+export default Body;
