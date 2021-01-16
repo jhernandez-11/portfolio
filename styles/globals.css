@@ -5,12 +5,13 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  background: linear-gradient(#000, rgba(17, 24, 39, 1));
 }
 
-.container {
+.global-container {
   width: 100vw;
   height: 100vh;
-
+  position: relative;
   display: grid;
   grid-template-rows: max-content 1fr;
 }

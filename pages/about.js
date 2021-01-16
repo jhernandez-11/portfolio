@@ -14,7 +14,7 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="global-container">
           <Header tab="about" />
           <AboutContent />
           <Footer

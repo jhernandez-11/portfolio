@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Link from "next/link";
 
 const header = (props) => {
-  const aClasses1 = ["hover:text-yellow-600", "transition-all"];
-  const aClasses2 = ["text-yellow-600", "transition-all", "cursor-default"];
-  const liClasses = ["mr-3", "pr-3", "border-r", "border-black"];
+  const aClasses1 = ["hover:text-gray-600", "transition-all", "text-white"];
+  const aClasses2 = ["text-blue-300", "transition-all", "cursor-default"];
+  const liClasses = ["mr-3", "pr-3", "border-r", "border-white"];
   let designsTab = aClasses1,
     developmentsTab = aClasses1,
     aboutTab = aClasses1,
@@ -28,10 +28,10 @@ const header = (props) => {
 
   return (
     <React.Fragment>
-      <nav className="flex justify-around w-screen py-6">
+      <nav className="flex justify-around w-screen py-6 z-10">
         <Link href="/">
           <h1 className="text-2xl font-bold text-blue-600 cursor-pointer transform-gpu hover:scale-105 transition ease-linear">
-            josehdz.io
+            astrosites.io
           </h1>
         </Link>
 

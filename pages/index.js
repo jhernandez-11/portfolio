@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Header from "../layout/Header";
-import Main from "../layout/Main";
+import Main from "../layout/MainContent";
 import Footer from "../layout/Footer";
-
 class Home extends Component {
   state = {
     arrows: {
@@ -13,7 +12,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="global-container">
           <Header />
           <Main />
           <Footer

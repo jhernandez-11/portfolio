@@ -14,7 +14,7 @@ class Connect extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="global-container">
           <Header tab="connect" />
           <ConnectContent />
           <Footer

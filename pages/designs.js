@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
+import DesignsContent from '../components/DesignsContent'
 
 class Designs extends Component {
   state = {
@@ -13,9 +14,9 @@ class Designs extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="global-container">
           <Header tab="designs" />
-          <p>Hi</p>
+          <DesignsContent />
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
