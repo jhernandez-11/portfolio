@@ -1,21 +1,22 @@
 import React, { Component } from "react";
+import ConnectContent from "../components/ConnectContent";
 import Header from "../layout/Nav";
-import Main from "../layout/Main";
 import Footer from "../layout/Footer";
 
-class Home extends Component {
+class Connect extends Component {
   state = {
     arrows: {
-      left: false,
-      right: true,
-    },
+      left: true,
+      right: false,
+    }
   };
+
   render() {
     return (
       <React.Fragment>
         <div className="container">
-          <Header />
-          <Main />
+          <Header tab="connect" />
+          <ConnectContent />
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
@@ -26,4 +27,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Connect;

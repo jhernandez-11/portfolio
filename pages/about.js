@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import Header from "../layout/Nav";
-import Main from "../layout/Main";
+import AboutContent from "../components/AboutContent";
 import Footer from "../layout/Footer";
 
-class Home extends Component {
+class About extends Component {
   state = {
     arrows: {
-      left: false,
+      left: true,
       right: true,
-    },
+    }
   };
+
   render() {
     return (
       <React.Fragment>
         <div className="container">
-          <Header />
-          <Main />
+          <Header tab="about" />
+          <AboutContent />
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
@@ -26,4 +27,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default About;

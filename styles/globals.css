@@ -1,16 +1,34 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: max-content 1fr;
 }
 
-* {
-  box-sizing: border-box;
+.font-secondary {
+  font-family: 'Comfortaa', cursive;
+}
+
+.glass {
+  background: rgba(37, 99, 235, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.36);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.glass:hover {
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
 }
