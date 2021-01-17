@@ -14,7 +14,7 @@ const main = (props) => (
                         flex place-items-center justify-center"
         >
           <h3 className="font-secondary text-white text-6xl w-min leading-normal font-bold">
-            Ideas are Infinate.
+            Ideas are Infinite.
           </h3>
         </div>
         <div className="glass absolute -bottom-12 -right-12 z-20 w-24 h-24 rounded-full"></div>

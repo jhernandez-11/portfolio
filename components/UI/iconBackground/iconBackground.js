@@ -5,7 +5,7 @@ import {
   Telescope,
   Star,
   Snow,
-  Infinate,
+  Infinite,
   Hourglass,
   Earth,
   Moon,
@@ -19,7 +19,7 @@ const iconBackground = (props) => {
       <Telescope />
       <Star />
       <Snow />
-      <Infinate />
+      <Infinite />
       <Hourglass />
       <Earth />
       <Moon />

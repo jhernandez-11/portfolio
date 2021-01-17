@@ -149,7 +149,7 @@ const snow = (props) => {
   );
 };
 
-const infinate = (props) => {
+const infinite = (props) => {
   const classes = [
     "ionicon",
     "w-9",,
@@ -260,7 +260,7 @@ export {
   telescope as Telescope,
   star as Star,
   snow as Snow,
-  infinate as Infinate,
+  infinite as Infinite,
   hourglass as Hourglass,
   earth as Earth,
   moon as Moon

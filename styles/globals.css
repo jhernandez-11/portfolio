@@ -8,6 +8,15 @@ body {
   background: linear-gradient(#000, rgba(17, 24, 39, 1));
 }
 
+img {
+  filter: grayscale(75%) hue-rotate(150deg);
+  transition: all .3s cubic-bezier(1, 0, 0, 1);
+}
+
+img:hover {
+  filter: none;
+}
+
 .global-container {
   width: 100vw;
   height: 100vh;
