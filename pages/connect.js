@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ConnectContent from "../components/ConnectContent";
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
+import ConnectContent from "../src/components/ConnectContent";
+import Header from "../src/layout/Header";
+import Footer from "../src/layout/Footer";
 
 class Connect extends Component {
   state = {

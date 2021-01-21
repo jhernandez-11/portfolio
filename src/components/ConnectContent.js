@@ -11,12 +11,12 @@ import {
 
 const connectContent = (props) => (
   <React.Fragment>
-    <main className="relative w-full h-full flex place-items-center justify-center z-10">
+    <main className="flex place-items-center justify-center relative font-comfortaa w-full h-full z-10">
       <GlassBackground>
-        <h1 className="text-white text-3xl m-9 w-1/2">
-          I live and was born in the Bay Area, but you can find me online in these platforms -{" "}
+        <h1 className="text-white text-3xl m-9 w-2/3">
+          Look for me in the Bay Area, but you can find me online in these platforms -{" "}
         </h1>
-        <div className="m-9 w-1/2 text-white grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-6 text-white m-9 w-2/3">
           <Twitter />
           <LinkedIn />
           <Instagram />

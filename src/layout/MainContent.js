@@ -5,15 +5,14 @@ import IconBackground from '../components/UI/iconBackground/iconBackground'
 const main = (props) => (
   <React.Fragment>
     <IconBackground />
-    <main className="grid grid-cols-2 place-items-center w-full h-full z-10">
+    <main className="grid grid-cols-2 place-items-center font-comfortaa w-full h-full z-10">
       <div className="relative">
         <div className="w-96 h-96"></div>
         <div className="glass absolute z-10 w-96 h-96 top-0"></div>
         <div
-          className="absolute z-0 w-96 h-96 self-center top-0 
-                        flex place-items-center justify-center"
+          className="flex place-items-center justify-center absolute self-center w-96 h-96 top-0 z-0"
         >
-          <h3 className="font-secondary text-white text-6xl w-min leading-normal font-bold">
+          <h3 className="text-white text-6xl w-min leading-normal font-bold">
             Ideas are Infinite.
           </h3>
         </div>
@@ -21,11 +20,11 @@ const main = (props) => (
       </div>
 
       <div>
-        <h1 className="left-2/4 top-28 mr-12 text-5xl text-white border-b-4 border-blue-600 pb-3 mb-6">
+        <h1 className="font-nunito left-2/4 top-28 mr-12 text-5xl text-white border-b-4 border-blue-600 pb-3 mb-6">
           Using your imagination and my dedication, we can launch a website that
           will illuminate in people's eyes. Initiate your journey below.
         </h1>
-        <div className="flex row justify-between">
+        <div className="flex row justify-between font-nunito">
           <a
             href="mailto:astrosites.io@gmail.com"
             target="_blank"

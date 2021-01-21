@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../layout/Header";
-import Main from "../layout/MainContent";
-import Footer from "../layout/Footer";
+import Header from "../src/layout/Header";
+import Main from "../src/layout/MainContent";
+import Footer from "../src/layout/Footer";
 class Home extends Component {
   state = {
     arrows: {

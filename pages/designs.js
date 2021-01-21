@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-import DesignsContent from '../components/DesignsContent'
+import Header from "../src/layout/Header";
+import Footer from "../src/layout/Footer";
+import DesignsContent from '../src/components/DesignsContent/DesignsContent'
 
 class Designs extends Component {
   state = {

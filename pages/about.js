@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../layout/Header";
-import AboutContent from "../components/AboutContent";
-import Footer from "../layout/Footer";
+import Header from "../src/layout/Header";
+import AboutContent from "../src/components/AboutContent";
+import Footer from "../src/layout/Footer";
 
 class About extends Component {
   state = {

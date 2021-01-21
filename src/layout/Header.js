@@ -28,9 +28,9 @@ const header = (props) => {
 
   return (
     <React.Fragment>
-      <nav className="flex justify-around w-screen py-6 z-10">
+      <nav className="flex justify-around font-nunito w-screen py-6 z-10">
         <Link href="/">
-          <h1 className="text-2xl font-bold text-blue-600 cursor-pointer transform-gpu hover:scale-105 transition ease-linear">
+          <h1 className="transform-gpu hover:scale-105 transition ease-linear text-2xl font-bold text-blue-600 cursor-pointer">
             astrosites.io
           </h1>
         </Link>

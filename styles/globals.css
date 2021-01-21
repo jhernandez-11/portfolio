@@ -4,16 +4,15 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito', sans-serif;
   background: linear-gradient(#000, rgba(17, 24, 39, 1));
 }
 
-img {
+img, iframe {
   filter: grayscale(75%) hue-rotate(150deg);
-  transition: all .3s cubic-bezier(1, 0, 0, 1);
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-img:hover {
+img:hover, iframe:hover {
   filter: none;
 }
 
@@ -23,10 +22,6 @@ img:hover {
   position: relative;
   display: grid;
   grid-template-rows: max-content 1fr;
-}
-
-.font-secondary {
-  font-family: 'Comfortaa', cursive;
 }
 
 .glass {
