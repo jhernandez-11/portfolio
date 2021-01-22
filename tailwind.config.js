@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
-  darkMode: false, // or 'media' or 'class'
+  purge: false,
   theme: {
     fontFamily: {
       nunito: ['Nunito', 'sans-serif'],
