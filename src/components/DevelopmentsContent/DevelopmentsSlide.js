@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from "../UI/svgs";
-import LoadingAnimation from '../UI/loadingAnimation'
+import { LinkIcon } from "../UI/svgs";
 
 const developmentsSlide = (props) => (
   <div className="relative h-full w-full">
-    <LoadingAnimation />
     <iframe
       title={props.title}
       loading="lazy"
-      className="w-2/3 h-almost-full ml-1 z-10"
+      className="w-1/3 h-almost-full ml-1 z-10"
       src={props.link}
     ></iframe>
     <a
@@ -18,7 +16,7 @@ const developmentsSlide = (props) => (
       target="_blank"
     >
       visit page
-      <Link />
+      <LinkIcon />
     </a>
   </div>
 );

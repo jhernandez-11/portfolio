@@ -7,7 +7,7 @@ const aboutContent = (props) => (
       <GlassBackground>
         <h1 className="text-white text-2xl m-9">
           Hello, my name is Jose, and I'm an entry-level web designer/developer.
-          As an Ohlone College Alumni, I hold an Associate's Degree in
+          As an Ohlone College Student, I'm pursuing an Associate's Degree in
           Multimedia and a Certificate of Achievement in Multimedia: Front End
           Development/User Experience Web Design. My experience additionally
           includes, but not limited to, the following -

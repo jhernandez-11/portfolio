@@ -189,7 +189,7 @@ const youtube = (props) => {
     </svg>
   );
 };
-const link = (props) => {
+const linkIcon = (props) => {
   const svgClasses = [
     "ionicon",
     "w-6",
@@ -217,5 +217,5 @@ export {
   discord as Discord,
   codepen as Codepen,
   youtube as Youtube,
-  link as Link
+  linkIcon as LinkIcon
 };

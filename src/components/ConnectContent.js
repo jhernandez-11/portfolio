@@ -14,7 +14,7 @@ const connectContent = (props) => (
     <main className="flex place-items-center justify-center relative font-comfortaa w-full h-full z-10">
       <GlassBackground>
         <h1 className="text-white text-3xl m-9 w-2/3">
-          Look for me in the Bay Area, but you can find me online in these platforms -{" "}
+          Located in the Bay Area, but you can find me online in these platforms -{" "}
         </h1>
         <div className="grid grid-cols-3 gap-6 text-white m-9 w-2/3">
           <Twitter />
