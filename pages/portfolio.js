@@ -17,6 +17,7 @@ class Portfolio extends Component {
       <React.Fragment>
         <Head>
           <title>Portfolio</title>
+          <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
         </Head>
 
         <div className="global-container">
