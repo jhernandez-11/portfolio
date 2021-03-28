@@ -18,7 +18,7 @@ class Home extends Component {
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
-            rightPage="/designs"
+            rightPage="/portfolio"
             leftPage="/"
           />
         </div>

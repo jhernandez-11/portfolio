@@ -1,27 +1,32 @@
 import React, { Component } from "react";
 import Header from "../src/layout/Header";
-import AboutContent from "../src/components/AboutContent";
 import Footer from "../src/layout/Footer";
+import PortfolioContent from "../src/components/PortfolioContent/PortfolioContent";
+import Head from "next/head";
 
-class About extends Component {
+class Portfolio extends Component {
   state = {
     arrows: {
       left: true,
       right: true,
-    }
+    },
   };
 
   render() {
     return (
       <React.Fragment>
+        <Head>
+          <title>Portfolio</title>
+        </Head>
+
         <div className="global-container">
-          <Header tab="about" />
-          <AboutContent />
+          <Header tab="portfolio" />
+          <PortfolioContent />
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
-            rightPage="/connect"
-            leftPage="/developments"
+            rightPage="/resume"
+            leftPage="/"
           />
         </div>
       </React.Fragment>
@@ -29,4 +34,5 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Portfolio;
+

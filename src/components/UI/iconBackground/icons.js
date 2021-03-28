@@ -34,7 +34,7 @@ const sun = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -70,7 +70,7 @@ const telescope = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -104,7 +104,7 @@ const star = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -129,7 +129,7 @@ const snow = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -155,7 +155,7 @@ const infinite = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -181,7 +181,7 @@ const hourglass = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -208,7 +208,7 @@ const earth = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg
@@ -234,7 +234,7 @@ const moon = (props) => {
     "w-9",,
     "opacity-30",
     "animate-pulse",
-    "text-white",
+    "text-white-default",
   ];
   return (
     <svg

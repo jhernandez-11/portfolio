@@ -15,7 +15,7 @@ class LoadingAnimation extends Component {
 
   render() {
     return (
-      <div className="loading-anime flex absolute text-white left-1/4 top-1/2 z-0">
+      <div className="loading-anime flex absolute text-white left-1/4 top-1/2 z-0 text-blue-dark">
         <h3>L</h3>
         <h3>O</h3>
         <h3>A</h3>

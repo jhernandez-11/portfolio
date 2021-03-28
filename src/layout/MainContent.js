@@ -7,20 +7,11 @@ const main = (props) => (
     <IconBackground />
     <main className="grid grid-cols-2 place-items-center font-comfortaa w-full h-full z-10">
       <div className="relative">
-        <div className="w-96 h-96"></div>
-        <div className="glass absolute z-10 w-96 h-96 top-0"></div>
-        <div
-          className="flex place-items-center justify-center absolute self-center w-96 h-96 top-0 z-0"
-        >
-          <h3 className="text-white text-6xl w-min leading-normal font-bold">
-            Ideas are Infinite.
-          </h3>
-        </div>
-        <div className="glass absolute -bottom-12 -right-12 z-20 w-24 h-24 rounded-full"></div>
+        <img src="/logo-color.png" alt="logo" width="450" height="450" />
       </div>
 
       <div>
-        <h1 className="font-nunito left-2/4 top-28 mr-12 text-5xl text-white border-b-4 border-blue-600 pb-3 mb-6">
+        <h1 className="font-nunito left-2/4 top-28 mr-12 text-5xl text-gray-lightest border-b-4 border-blue-default pb-3 mb-6">
           Using your imagination and my dedication, we can launch a website that
           will illuminate in people's eyes. Initiate your journey below.
         </h1>

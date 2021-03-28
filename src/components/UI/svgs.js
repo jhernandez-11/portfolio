@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 const leftArrow = (props) => {
-  const svgClasses = ["ionicon", "w-12", "text-gray-600"];
+  const svgClasses = ["ionicon", "w-12", "text-gray-darkest"];
   if (props.active1) {
     svgClasses.pop();
-    svgClasses.push("hover:text-blue-600", "cursor-pointer", "text-white");
+    svgClasses.push("hover:text-blue-dark", "cursor-pointer", "text-gray-lightest");
   }
   return (
     <React.Fragment>
@@ -31,10 +31,10 @@ const leftArrow = (props) => {
 };
 
 const rightArrow = (props) => {
-  const svgClasses = ["ionicon", "w-12", "text-gray-600"];
+  const svgClasses = ["ionicon", "w-12", "text-gray-dark"];
   if (props.active2) {
     svgClasses.pop();
-    svgClasses.push("hover:text-blue-600", "cursor-pointer", "text-white");
+    svgClasses.push("hover:text-blue-dark", "cursor-pointer", "text-gray-lightest");
   }
 
   return (

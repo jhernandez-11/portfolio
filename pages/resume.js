@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Header from "../src/layout/Header";
 import Footer from "../src/layout/Footer";
-import DevelopmentsContent from '../src/components/DevelopmentsContent/DevelopmentsContent'
+import ResumeContent from '../src/components/ResumeContent/ResumeContent'
 
-class Developments extends Component {
+class Resume extends Component {
   state = {
     arrows: {
       left: true,
@@ -15,13 +15,13 @@ class Developments extends Component {
     return (
       <React.Fragment>
         <div className="global-container">
-          <Header tab="developments" />
-          <DevelopmentsContent />
+          <Header tab="resume" />
+          <ResumeContent />
           <Footer
             arrowRight={this.state.arrows.right}
             arrowLeft={this.state.arrows.left}
-            rightPage="/about"
-            leftPage="/designs"
+            rightPage="/contact"
+            leftPage="/portfolio"
           />
         </div>
       </React.Fragment>
@@ -29,4 +29,4 @@ class Developments extends Component {
   }
 }
 
-export default Developments;
+export default Resume;
