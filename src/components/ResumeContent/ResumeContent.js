@@ -2,7 +2,13 @@ import React from "react";
 
 const resumeContent = (props) => (
   <React.Fragment>
-    <iframe className="w-full h-full" src="/final-resume.pdf" title="resume"></iframe>
+    <div className="w-full h-full grid place-items-center">
+      <iframe
+        className="w-full h-full"
+        src="/final-resume.pdf"
+        title="resume"
+      ></iframe>
+    </div>
   </React.Fragment>
 );
 
