@@ -13,6 +13,9 @@ module.exports = {
       },
       white: {
         default: '#fff'
+      },
+      red: {
+        default: '#ED4D23'
       }
     },
     fontFamily: {

@@ -170,6 +170,10 @@ class PortfolioContent extends Component {
                 Tea Cozy
               </button>
             </div>
+            <h3 className="text-2xl text-red-default opacity-75 my-3 ml-3">
+              *Disclaimer - These are front-end and back-end prototypes. They
+              have limited useability.
+            </h3>
             <Project
               project={this.state.currentProject}
               loading={this.state.loading}

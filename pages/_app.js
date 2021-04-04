@@ -1,5 +1,5 @@
 // Global CSS
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.css";

@@ -10,7 +10,7 @@ class Project extends Component {
           src={this.props.project}
           className={this.props.loading ? classHidden : classShown}
           onLoad={() => {
-            this.props.loadingHandler()
+            setTimeout(() => this.props.loadingHandler(), 2100)
           }}
         ></iframe>
 
