@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "./Project";
+import { LinkIcon } from "../UI/svgs";
 
 class PortfolioContent extends Component {
   state = {
@@ -170,10 +171,20 @@ class PortfolioContent extends Component {
                 Tea Cozy
               </button>
             </div>
-            <h3 className="text-2xl text-red-default opacity-75 my-3 ml-3">
-              *Disclaimer - These are front-end and back-end prototypes. They
-              have limited useability.
-            </h3>
+            <div className="flex justify-evenly">
+              <h3 className="text-2xl text-red-default opacity-75 my-3 ml-3">
+                *Disclaimer - These are front-end and back-end prototypes. They
+                have limited useability.
+              </h3>
+              <a
+                className="text-2xl text-gray-lightest bg-blue-dark rounded-lg cursor-pointer px-2 py-1 opacity-75 my-3 ml-3 flex"
+                href={this.state.currentProject}
+                target="_blank"
+              >
+                Open in new tab
+                <LinkIcon />
+              </a>
+            </div>
             <Project
               project={this.state.currentProject}
               loading={this.state.loading}
