@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonOne } from "../components/UI/buttons";
-import IconBackground from '../components/UI/iconBackground/iconBackground'
+import IconBackground from "../components/UI/iconBackground/iconBackground";
 
 const main = (props) => (
   <React.Fragment>
@@ -11,10 +11,17 @@ const main = (props) => (
       </div>
 
       <div>
-        <h1 className="font-nunito left-2/4 top-28 mr-12 text-5xl text-gray-lightest border-b-4 border-blue-default pb-3 mb-6">
-          Using your imagination and my dedication, we can launch a website that
-          will illuminate in people's eyes. Initiate your journey below.
+        <h1 className="font-nunito left-2/4 top-28 mr-12 text-5xl text-gray-lightest pb-3">
+          Jose Hernandez
         </h1>
+        <h1 className="font-nunito left-2/4 top-28 mr-12 text-3xl text-gray-lightest pb-3">
+          Front End Developer
+        </h1>
+        <h1 className="font-nunito left-2/4 top-28 mr-12 text-3xl text-blue-light border-b-4 border-blue-default pb-3 mb-6">
+          Using your imagination and my dedication, we will launch a website
+          that will transcend others. <br /> <b>Initiate your journey below.</b>
+        </h1>
+
         <div className="flex row justify-between font-nunito">
           <a
             href="mailto:astrosites.io@gmail.com"

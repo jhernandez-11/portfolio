@@ -5,6 +5,19 @@ class PortfolioContent extends Component {
   state = {
     currentProject: "https://jhernandez-11.github.io/Natours/",
     active: "natours",
+    loading: true,
+  };
+
+  loadingHandlerFalse = () => {
+    this.setState({
+      loading: false,
+    });
+  };
+
+  loadingHandlerTrue = () => {
+    this.setState({
+      loading: true,
+    });
   };
 
   render() {
@@ -16,7 +29,7 @@ class PortfolioContent extends Component {
       "https://jhernandez-11.github.io/Nexter/",
       "https://jhernandez-11.github.io/ChoreDoor/",
       "https://jhernandez-11.github.io/Outerpage/",
-      "https://jhernandez-11.github.io/TeaCozy/"
+      "https://jhernandez-11.github.io/TeaCozy/",
     ];
 
     const activeLink = (projName) => {
@@ -37,8 +50,9 @@ class PortfolioContent extends Component {
                     : "text-blue-default "
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
-                    currentProject: links[0],
+                    currentProject: "https://jhernandez-11.github.io/Natours/",
                     active: "natours",
                   });
                 }}
@@ -52,6 +66,7 @@ class PortfolioContent extends Component {
                     : "text-blue-default "
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[3],
                     active: "trillo",
@@ -67,6 +82,7 @@ class PortfolioContent extends Component {
                     : "text-blue-default "
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[4],
                     active: "nexter",
@@ -82,6 +98,7 @@ class PortfolioContent extends Component {
                     : "text-blue-default "
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[2],
                     active: "chatapp",
@@ -97,6 +114,7 @@ class PortfolioContent extends Component {
                     : "text-blue-default"
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[1],
                     active: "jammming",
@@ -110,6 +128,7 @@ class PortfolioContent extends Component {
                   activeLink("bot") ? "text-gray-lightest" : "text-blue-default"
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[5],
                     active: "bot",
@@ -120,9 +139,12 @@ class PortfolioContent extends Component {
               </button>
               <button
                 className={
-                  activeLink("outerpage") ? "text-gray-lightest" : "text-blue-default"
+                  activeLink("outerpage")
+                    ? "text-gray-lightest"
+                    : "text-blue-default"
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[6],
                     active: "outerpage",
@@ -133,9 +155,12 @@ class PortfolioContent extends Component {
               </button>
               <button
                 className={
-                  activeLink("cozy") ? "text-gray-lightest" : "text-blue-default"
+                  activeLink("cozy")
+                    ? "text-gray-lightest"
+                    : "text-blue-default"
                 }
                 onClick={() => {
+                  this.loadingHandlerTrue();
                   this.setState({
                     currentProject: links[7],
                     active: "cozy",
@@ -145,7 +170,11 @@ class PortfolioContent extends Component {
                 Tea Cozy
               </button>
             </div>
-            <Project project={this.state.currentProject} />
+            <Project
+              project={this.state.currentProject}
+              loading={this.state.loading}
+              loadingHandler={this.loadingHandlerFalse}
+            />
           </div>
         </main>
       </React.Fragment>

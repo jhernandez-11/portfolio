@@ -1,12 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 
-const project = (props) => (
-  <React.Fragment>
-    <iframe
-      src={props.project}
-      className="iframe-placeholder w-full h-screen pb-16"
-    ></iframe>
-  </React.Fragment>
-);
+class Project extends Component {
+  render() {
+    let classHidden = "w-full h-screen pb-16 hidden",
+      classShown = "w-full h-screen pb-16";
+    return (
+      <React.Fragment>
+        <iframe
+          src={this.props.project}
+          className={this.props.loading ? classHidden : classShown}
+          onLoad={() => {
+            this.props.loadingHandler()
+          }}
+        ></iframe>
 
-export default project;
+        <iframe
+          src="https://jhernandez-11.github.io/Loading.../"
+          className={this.props.loading ? classShown : classHidden}
+        ></iframe>
+      </React.Fragment>
+    );
+  }
+}
+
+export default Project;
