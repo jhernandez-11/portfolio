@@ -16,7 +16,7 @@ class Resume extends Component {
     return (
       <React.Fragment>
         <Head>
-          <title>Resume</title>
+          <title>Astrosites | Resume</title>
           <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
         </Head>
         <div className="global-container">

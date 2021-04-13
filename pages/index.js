@@ -15,7 +15,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Head>
-          <title>Home</title>
+          <title>Astrosites | Home</title>
           <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
         </Head>
 

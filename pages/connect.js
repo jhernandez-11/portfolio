@@ -17,7 +17,7 @@ class Connect extends Component {
     return (
       <React.Fragment>
         <Head>
-          <title>Portfolio</title>
+          <title>Astrosites | Portfolio</title>
           <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
         </Head>
         <div className="global-container">
