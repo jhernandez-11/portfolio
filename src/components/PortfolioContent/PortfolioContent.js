@@ -31,6 +31,7 @@ class PortfolioContent extends Component {
       "https://jhernandez-11.github.io/ChoreDoor/",
       "https://jhernandez-11.github.io/Outerpage/",
       "https://jhernandez-11.github.io/TeaCozy/",
+      "https://jhernandez-11.github.io/Cosmic-Guide/"
     ];
 
     const activeLink = (projName) => {
@@ -170,10 +171,26 @@ class PortfolioContent extends Component {
               >
                 Tea Cozy
               </button>
+              <button
+                className={
+                  activeLink("cg")
+                    ? "text-gray-lightest"
+                    : "text-blue-default"
+                }
+                onClick={() => {
+                  this.loadingHandlerTrue();
+                  this.setState({
+                    currentProject: links[8],
+                    active: "cg",
+                  });
+                }}
+              >
+                Cosmic Guide
+              </button>
             </div>
             <div className="flex justify-evenly">
               <h3 className="text-2xl text-gray-lightest opacity-75 my-3 ml-3">
-                *Disclaimer - These are front-end and back-end prototypes.
+                *Disclaimer - These are prototypes.
               </h3>
               <a
                 className="text-2xl text-gray-lightest bg-blue-dark rounded-lg cursor-pointer px-2 py-1 opacity-75 my-3 ml-3 flex"
